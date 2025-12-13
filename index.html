@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scott McCloskey | Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Scott McCloskey</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#awards">Awards</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Scott</span>.</h1>
+            <h2>I specialize in <span class="typewriter"></span></h2>
+            <p>Computer Science Student at UC Irvine | AI Researcher | Game Developer</p>
+            <div class="hero-btns">
+                <a href="mailto:floofpony@gmail.com" class="btn primary-btn">Contact Me</a>
+                <a href="https://www.linkedin.com/in/ScottSTEM" target="_blank" class="btn secondary-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+            I am a motivated Software Engineering B.S. student at the <strong>University of California, Irvine</strong> with a 3.95 GPA. 
+            My passion lies at the intersection of <strong>Artificial Intelligence, Game Development, and Software Engineering</strong>. 
+            I have hands-on experience utilizing supercomputers (Perlmutter & Lawrencium), fine-tuning LLMs, and leading development teams for indie games.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Languages</h3>
+                <p>Python, C++, Java, JavaScript, TypeScript, C#, Assembly, PHP</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-brain"></i>
+                <h3>AI & ML</h3>
+                <p>PyTorch, TensorFlow, Hugging Face, LLMs, Axolotl, Deep Q-Learning</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-gamepad"></i>
+                <h3>Game Dev</h3>
+                <p>Unreal Engine, Unity, WebGL, C++ QT</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>Data & Web</h3>
+                <p>MongoDB, SQL, React, Node.js, HTML5/CSS, Streamlit</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container">
+        <h2 class="section-title">Experience</h2>
+        
+        <!-- Job Search Alert -->
+        <div class="job-alert">
+            <i class="fas fa-briefcase"></i> 
+            <strong>Open to Work:</strong> Searching for full-time Software Engineering roles post-graduation (Spring 2026).
+        </div>
+
+        <div class="timeline">
+            
+            <!-- Job 1 -->
+            <div class="timeline-item">
+                <div class="timeline-date">Sept 2025 - Present</div>
+                <div class="timeline-content">
+                    <h3>Lead Programmer</h3>
+                    <h4>Undisclosed Game Title | Vin Visions Studios LLC</h4>
+                    <ul>
+                        <li>Developing core gameplay features using C++/BP in Unreal Engine.</li>
+                        <li>Programming enemy AI, responsive UI systems, and player mechanics.</li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Job 2: Mail Mares -->
+             <div class="timeline-item">
+                <div class="timeline-date">Sept 2025 - Present</div>
+                <div class="timeline-content">
+                    <h3>Project Lead / Game Director</h3>
+                    <h4>Mail Mares | Video Game Development Club</h4>
+                    <ul>
+                        <li>Directing a team of 15 developers for a co-op action rogue-lite in Unity.</li>
+                        <li>Managed technical scope and multiplayer networking.</li>
+                    </ul>
+                    
+                    <!-- Itch.io Embed Card -->
+                    <a href="https://scottmc.itch.io/mail-mares" target="_blank" class="embed-card">
+                        <div class="embed-icon color-itch"><i class="fab fa-itch-io"></i></div>
+                        <div class="embed-info">
+                            <span class="embed-title">Play Mail Mares on Itch.io</span>
+                            <span class="embed-desc">Check out our latest build and devlogs.</span>
+                        </div>
+                        <div class="embed-arrow"><i class="fas fa-external-link-alt"></i></div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Job 3: LBNL -->
+            <div class="timeline-item">
+                <div class="timeline-date">June 2024 - Sept 2024</div>
+                <div class="timeline-content">
+                    <h3>Machine Learning Intern</h3>
+                    <h4>Lawrence Berkeley National Laboratory (ABPDU)</h4>
+                    <ul>
+                        <li>Predicted biomass sugar yields using ML algorithms to aid sustainable aviation fuel creation.</li>
+                        <li>Fine-tuned Large Language Models (LLMs) and created datasets from scientific papers.</li>
+                    </ul>
+
+                    <!-- Article Embed Card -->
+                    <a href="https://abpdu.lbl.gov/news/abpdu-alumni-highlight-scott-mccloskey/" target="_blank" class="embed-card">
+                        <div class="embed-icon color-news"><i class="fas fa-newspaper"></i></div>
+                        <div class="embed-info">
+                            <span class="embed-title">Alumni Highlight: Scott McCloskey</span>
+                            <span class="embed-desc">Read the full article on ABPDU.lbl.gov regarding my research work.</span>
+                        </div>
+                        <div class="embed-arrow"><i class="fas fa-external-link-alt"></i></div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Job 4: Valiant Studios -->
+            <div class="timeline-item">
+                <div class="timeline-date">June 2021 - Present</div>
+                <div class="timeline-content">
+                    <h3>General Programmer (AI & UI)</h3>
+                    <h4>Dimensional Shift | Valiant Studios LLC</h4>
+                    <ul>
+                        <li>Engineered AI opponents and UI elements using Unreal Engine.</li>
+                        <li>Collaborated with a team of 29+ developers on an indie action game.</li>
+                    </ul>
+
+                    <!-- YouTube Embed Card -->
+                    <a href="https://www.youtube.com/c/valiantstudiosllc" target="_blank" class="embed-card">
+                        <div class="embed-icon color-yt"><i class="fab fa-youtube"></i></div>
+                        <div class="embed-info">
+                            <span class="embed-title">Valiant Studios YouTube</span>
+                            <span class="embed-desc">View our game trailers and development updates.</span>
+                        </div>
+                        <div class="embed-arrow"><i class="fas fa-external-link-alt"></i></div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Job 5 -->
+            <div class="timeline-item">
+                <div class="timeline-date">Nov 2022 - Nov 2023</div>
+                <div class="timeline-content">
+                    <h3>NASA Researcher / Scrum Master</h3>
+                    <h4>SDO Exploration & Research Community</h4>
+                    <ul>
+                        <li>Applied Machine Learning to catalog solar images from the SDO satellite.</li>
+                        <li>Served as Scrum Master guiding a team of 8 through Agile development.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <h3>University of California, Irvine</h3>
+                <p class="degree">B.S. Software Engineering</p>
+                <p class="date">Fall 2024 - Present | <strong>GPA: 3.95</strong></p>
+                <p class="courses">Algorithms, Software Design, Project Management</p>
+            </div>
+            <div class="edu-card">
+                <h3>Saddleback College</h3>
+                <p class="degree">AS Cyber Defense & AS Computer Science</p>
+                <p class="date">Granted May 2024 | <strong>GPA: 3.92</strong></p>
+                <p class="courses">Linear Algebra, Assembly, Data Structures</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="container">
+        <h2 class="section-title">Honors & Awards</h2>
+        <ul class="awards-list">
+            <li><strong>Rose Hills Undergraduate Scholarship</strong> (Aug 2025)</li>
+            <li><strong>Billy Steckler Endowed Scholarship</strong> (Aug 2025)</li>
+            <li><strong>U.S. Western Digital 2024 Scholarship</strong> (Aug 2024)</li>
+            <li><strong>CISOA Student Scholarship</strong> (July 2024)</li>
+            <li><strong>Chancellor’s Excellence Scholarship @ UC Irvine</strong> (May 2024)</li>
+            <li><strong>NSF S-STEM Scholarship</strong> (March 2023 & March 2024)</li>
+            <li><strong>SAME (Society of American Military Engineers) STEM Scholarship</strong> (Oct 2023)</li>
+            <li><strong>Tayanipour Memorial Scholarship</strong> (Oct 2023)</li>
+            <li><strong>Osher Foundation Endowed Scholarship</strong> (May 2023)</li>
+            <li><strong>AP Computer Science Award Medallion</strong> (June 2020)</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Scott McCloskey. Built with HTML, CSS, & JS.</p>
+        <div class="social-links">
+            <a href="mailto:floofpony@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/ScottSTEM"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
