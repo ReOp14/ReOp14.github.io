@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scott McCloskey | Software Engineer</title>
+    <!-- Website Icon (Favicon) -->
+    <link rel="icon" href="img/Unicorn2.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -13,12 +15,17 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">Scott McCloskey</div>
+        <!-- Updated Logo Section with Image -->
+        <div class="logo">
+            <img src="img/Unicorn.png">
+            <span>Scott McCloskey</span>
+        </div>
+        
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
             <li><a href="#awards">Awards</a></li>
         </ul>
         <div class="hamburger">
@@ -33,7 +40,7 @@
             <h2>I specialize in <span class="typewriter"></span></h2>
             <p>Computer Science Student at UC Irvine | AI Researcher | Game Developer</p>
             <div class="hero-btns">
-                <a href="mailto:floofpony@gmail.com" class="btn primary-btn">Contact Me</a>
+                <a href="mailto:scottmc.uni@gmail.com" class="btn primary-btn">Contact Me</a>
                 <a href="https://www.linkedin.com/in/ScottSTEM" target="_blank" class="btn secondary-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
@@ -47,6 +54,25 @@
             My passion lies at the intersection of <strong>Artificial Intelligence, Game Development, and Software Engineering</strong>. 
             I have hands-on experience utilizing supercomputers (Perlmutter & Lawrencium), fine-tuning LLMs, and leading development teams for indie games.
         </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <h3>University of California, Irvine</h3>
+                <p class="degree">B.S. Software Engineering</p>
+                <p class="date">Fall 2024 - Present | <strong>GPA: 3.95</strong></p>
+                <p class="courses">Algorithms, Software Design, Project Management</p>
+            </div>
+            <div class="edu-card">
+                <h3>Saddleback College</h3>
+                <p class="degree">AS Cyber Defense & AS Computer Science</p>
+                <p class="date">Granted May 2024 | <strong>GPA: 3.92</strong></p>
+                <p class="courses">Linear Algebra, Assembly, Data Structures</p>
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->
@@ -189,24 +215,7 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="edu-grid">
-            <div class="edu-card">
-                <h3>University of California, Irvine</h3>
-                <p class="degree">B.S. Software Engineering</p>
-                <p class="date">Fall 2024 - Present | <strong>GPA: 3.95</strong></p>
-                <p class="courses">Algorithms, Software Design, Project Management</p>
-            </div>
-            <div class="edu-card">
-                <h3>Saddleback College</h3>
-                <p class="degree">AS Cyber Defense & AS Computer Science</p>
-                <p class="date">Granted May 2024 | <strong>GPA: 3.92</strong></p>
-                <p class="courses">Linear Algebra, Assembly, Data Structures</p>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Awards Section -->
     <section id="awards" class="container">
@@ -229,7 +238,7 @@
     <footer>
         <p>&copy; 2025 Scott McCloskey. Built with HTML, CSS, & JS.</p>
         <div class="social-links">
-            <a href="mailto:floofpony@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:scottmc.uni@gmail.com"><i class="fas fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/ScottSTEM"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>

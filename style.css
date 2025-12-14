@@ -38,7 +38,21 @@ ul { list-style: none; }
     border-bottom: 1px solid #334155;
 }
 
-.logo { font-size: 1.5rem; font-weight: 700; color: var(--accent-color); }
+/* Updated Logo Styling */
+.logo { 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: var(--accent-color); 
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
 
 .nav-links { display: flex; gap: 30px; }
 .nav-links a:hover { color: var(--accent-color); }
