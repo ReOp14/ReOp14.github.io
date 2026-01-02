@@ -1,4 +1,4 @@
-/* --- Global vars --- */
+
 :root {
     --bg-color: #0f172a; /* Dark Navy */
     --card-bg: #1e293b; /* Lighter Navy */
@@ -111,7 +111,7 @@ ul { list-style: none; }
 /* --- Skills Grid --- */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 .skill-card {
@@ -152,7 +152,10 @@ ul { list-style: none; }
     width: 16px;
     height: 16px;
     right: auto;
-    left: 13px;
+    
+    left: 21px; 
+    transform: translateX(-50%); 
+    
     top: 15px;
     background-color: var(--bg-color);
     border: 3px solid var(--accent-color);
@@ -255,6 +258,7 @@ ul { list-style: none; }
 .color-meettheteam { background-color: #a73edcff; color: white; }
 .color-news { background-color: #3b82f6; color: white; }
 .color-yt { background-color: #ff0000; color: white; }
+.color-web { background-color: #6366f1; color: white; }
 
 .embed-info {
     flex-grow: 1;
@@ -406,7 +410,7 @@ ul { list-style: none; }
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 8px;
-    margin-left: 2px; /* Slight alignment with the header text */
+    margin-left: 2px; 
 }
 
 /* Mobile adjust for presentations */
@@ -445,7 +449,18 @@ footer {
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .hero h1 { font-size: 2.5rem; }
-    .timeline::after { left: 10px; }
+    /* Mobile Timeline Adjustments */
+    .timeline::after { 
+        left: 10px; 
+        /* Mobile Line center is at 10px + 1px = 11px */
+    } 
     .timeline-item { padding-left: 30px; }
-    .timeline-item::after { left: 3px; }
+    .timeline-item::after { 
+        left: 11px;
+        /* Inherits transform: translateX(-50%) from desktop styles */
+    }
+    /* Ensure grids stack on mobile */
+    .presentation-grid { grid-template-columns: 1fr; }
+    /* Reset skills grid to 1 column on mobile to prevent squishing */
+    .skills-grid { grid-template-columns: 1fr; }
 }
