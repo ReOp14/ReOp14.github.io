@@ -73,12 +73,19 @@ ul { list-style: none; }
 .hero h2 { font-size: 2rem; color: var(--secondary-accent); margin-bottom: 20px; }
 .highlight { color: var(--accent-color); }
 
-.hero-btns { margin-top: 30px; }
+.hero-btns { 
+    margin-top: 30px;
+    display: flex;             /* Enables Flexbox */
+    justify-content: center;   /* Centers buttons horizontally */
+    gap: 15px;                 /* Adds space between buttons automatically */
+    flex-wrap: wrap;           /* Allows wrapping if screen is small, but not mobile size yet */
+}
+
 .btn {
     padding: 12px 24px;
     border-radius: 5px;
     font-weight: 600;
-    margin: 0 10px;
+    text-align: center;
 }
 .primary-btn { background-color: var(--accent-color); color: #0f172a; }
 .primary-btn:hover { background-color: #7dd3fc; }
@@ -463,4 +470,13 @@ footer {
     .presentation-grid { grid-template-columns: 1fr; }
     /* Reset skills grid to 1 column on mobile to prevent squishing */
     .skills-grid { grid-template-columns: 1fr; }
+        .hero-btns {
+        flex-direction: column; /* Stacks buttons vertically on mobile */
+        align-items: center;    /* Centers them */
+        width: 100%;
+    }
+    .btn {
+        width: 100%;            /* Makes buttons wide and easy to tap */
+        max-width: 280px;       /* Prevents them from getting annoyingly wide */
+    }
 }
